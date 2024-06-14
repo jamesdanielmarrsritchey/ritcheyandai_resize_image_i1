@@ -1,0 +1,1 @@
+# ritcheyandai_resize_image_i1
