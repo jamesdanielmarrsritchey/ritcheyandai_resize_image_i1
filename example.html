@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Example</title>
+</head>
+<body>
+<div id='output'>Click to resize image.</div>
+<img id='source_image' src="source.png" style='height:512px;' alt="">
+<img id='destination_image' src="replace.png" alt="">
+<script src="function.js"></script>
+<script>
+document.querySelector("#output").addEventListener("click", function() {
+    const element = document.querySelector("#output");
+    if (element) {
+        resizeImageDataWithAspectRatio('source_image', 'destination_image', 512);
+    }
+});
+</script>
+</body>
+</html>
